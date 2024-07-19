@@ -1,0 +1,215 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Стили для шапки */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  background-image: url('hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Стили для основного содержимого */
+main {
+  padding: 40px;
+}
+
+.marquee {
+  background-color: #444;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.event {
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.event-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.event-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.event-item p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.stages {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stages h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.stages-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.stage-item {
+  flex: 0 0 80%;
+  -snap-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: left;
+}
+
+.stage-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Стили для подвала */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.participants {
+  padding: 40px;
+  text-align: center;
+}
+
+.participants h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.participants-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.participant-item {
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.participant-item img {
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.participant-item h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.participant-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.participant-item .btn {
+  display: inline-block;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.participant-item .btn:hover {
+  background-color: #555;
+}
